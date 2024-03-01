@@ -10,7 +10,7 @@ export default function NavBar() {
   const { numOfCartItems, getCart, numOfWishlistItems, getWishlist } =
     useContext(CartContext);
   let location = useLocation();
-  const navigate = useNavigate();
+  let navigate = useNavigate();
 
   useEffect(() => {
     getCart();
@@ -21,8 +21,8 @@ export default function NavBar() {
   }, []);
 
   function handleLogout() {
-    setUserToken(null);
     localStorage.removeItem("token");
+    setUserToken(null);
     navigate("/login");
   }
   return (
@@ -164,20 +164,10 @@ export default function NavBar() {
                       </span>
                     </NavLink>
                   </li>
-                  {/* <li className="nav-item">
-                    <NavLink
-                      className={`${
-                        location.pathname === "/profile"
-                          ? "text-main nav-link"
-                          : "nav-link text-black"
-                      }`}
-                      to={"/profile"}
-                    >
-                      Profile
-                    </NavLink>
-                  </li> */}
+
                   <li className="nav-item">
                     <Link
+                      to={"/login"}
                       className="nav-link text-black"
                       onClick={handleLogout}
                     >
