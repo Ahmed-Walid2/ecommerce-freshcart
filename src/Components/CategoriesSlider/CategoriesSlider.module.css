@@ -1,0 +1,42 @@
+.hImg {
+  height: 200px;
+  width: 100%;
+}
+
+/* @media screen and (max-width: 500px) {
+  .hImg {
+    height: 75px;
+  }
+  .smallFont {
+    font-size: 11px;
+    word-break: break-all;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .hImg {
+    height: 100px;
+  }
+  .smallFont {
+    font-size: 14px;
+    word-break: break-all;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hImg {
+    height: 150px;
+  }
+  .smallFont {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hImg {
+    height: 200px;
+  }
+  .smallFont {
+    font-size: 16px;
+  }
+} */

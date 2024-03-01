@@ -1,0 +1,45 @@
+.wBanner {
+  width: 100%;
+  height: 200px;
+}
+
+.wSlider {
+  width: 100%;
+  height: 400px;
+}
+
+@media screen and (max-width: 500px) {
+  .wBanner {
+    height: 75px;
+  }
+  .wSlider {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .wBanner {
+    height: 100px;
+  }
+  .wSlider {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wBanner {
+    height: 150px;
+  }
+  .wSlider {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wBanner {
+    height: 200px;
+  }
+  .wSlider {
+    height: 400px;
+  }
+}

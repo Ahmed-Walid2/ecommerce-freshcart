@@ -1,0 +1,41 @@
+.categoryLink {
+  cursor: pointer;
+  color: #71c74c;
+  transition: all 0.5s;
+}
+
+.categoryLink:hover {
+  transform: scale(1.06);
+  color: var(--main-color);
+}
+
+@media only screen and (max-width: 346px) {
+  .categoryLink {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-width: 347px) {
+  .categoryLink {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .categoryLink {
+    font-size: 20px;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 900px) {
+  .categoryLink {
+    font-size: 28px;
+  }
+}
+
+/* Extra large screens */
+@media only screen and (min-width: 1200px) {
+  .categoryLink {
+    font-size: 28px;
+  }
+}
