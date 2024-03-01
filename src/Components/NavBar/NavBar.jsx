@@ -52,7 +52,7 @@ export default function NavBar() {
                         : "nav-link text-black"
                     }`}
                     aria-current="page"
-                    to={"/home"}
+                    to={"home"}
                   >
                     Home
                   </NavLink>
@@ -65,7 +65,7 @@ export default function NavBar() {
                         ? "text-main nav-link"
                         : "nav-link text-black"
                     }`}
-                    to="/products"
+                    to="products"
                   >
                     Products
                   </NavLink>
@@ -77,7 +77,7 @@ export default function NavBar() {
                         ? "text-main nav-link"
                         : "nav-link text-black"
                     }`}
-                    to="/categories"
+                    to="categories"
                   >
                     Categories
                   </NavLink>
@@ -89,7 +89,7 @@ export default function NavBar() {
                         ? "text-main nav-link"
                         : "nav-link text-black"
                     }`}
-                    to="/brands"
+                    to="brands"
                   >
                     Brands
                   </NavLink>
@@ -101,7 +101,7 @@ export default function NavBar() {
                         ? "text-main nav-link"
                         : "nav-link text-black"
                     }`}
-                    to="/allorders"
+                    to="allorders"
                   >
                     My Orders
                   </NavLink>
@@ -137,7 +137,7 @@ export default function NavBar() {
                           ? "text-main nav-link"
                           : "nav-link text-black"
                       }`}
-                      to="/wishlist"
+                      to="wishlist"
                     >
                       <i className="fas fa-solid fa-heart fs-5"></i>
                       <span className="position-absolute top-75 start-100 translate-middle badge rounded-pill bg-danger h6">
@@ -153,7 +153,7 @@ export default function NavBar() {
                           ? "text-main nav-link"
                           : "nav-link text-black"
                       }`}
-                      to="/cart"
+                      to="cart"
                     >
                       <i className="fa-solid fa-cart-shopping fs-5"></i>
                       <span className="position-absolute top-75 start-100 translate-middle badge rounded-pill bg-main h6">
@@ -192,7 +192,7 @@ export default function NavBar() {
                           ? "text-main nav-link"
                           : "nav-link text-black"
                       }`}
-                      to="/register"
+                      to="register"
                     >
                       Register
                     </NavLink>
@@ -204,7 +204,7 @@ export default function NavBar() {
                           ? "text-main nav-link"
                           : "nav-link text-black"
                       }`}
-                      to="/login"
+                      to="login"
                     >
                       Login
                     </NavLink>
