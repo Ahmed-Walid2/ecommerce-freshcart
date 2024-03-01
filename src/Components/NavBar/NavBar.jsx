@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import styles from "./NavBar.module.css";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import logo from "../../assets/images/freshcart-logo.svg";
 import { AuthContext } from "../../context/AuthContext";
 import { CartContext } from "../../context/CartContext";
@@ -10,6 +10,7 @@ export default function NavBar() {
   const { numOfCartItems, getCart, numOfWishlistItems, getWishlist } =
     useContext(CartContext);
   let location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     getCart();
@@ -22,6 +23,7 @@ export default function NavBar() {
   function handleLogout() {
     setUserToken(null);
     localStorage.removeItem("token");
+    navigate("/login");
   }
   return (
     <>
