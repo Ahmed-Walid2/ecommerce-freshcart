@@ -35,9 +35,9 @@ import Wishlist from "./Components/Wishlist/Wishlist";
 
 function App() {
   const query = new QueryClient();
-  const routes = createHashRouter([
+  const routes = createBrowserRouter([
     {
-      path: "",
+      path: "/",
       element: <Layout />,
       errorElement: <ErrorPage />,
       children: [
@@ -50,7 +50,7 @@ function App() {
           ),
         },
         {
-          path: "home",
+          path: "/home",
           element: (
             <ProtectedRoute>
               <Home />
@@ -58,7 +58,7 @@ function App() {
           ),
         },
         {
-          path: "brands",
+          path: "/brands",
           element: (
             <ProtectedRoute>
               <Brands />
@@ -66,7 +66,7 @@ function App() {
           ),
         },
         {
-          path: "cart",
+          path: "/cart",
           element: (
             <ProtectedRoute>
               <Cart />
@@ -74,7 +74,7 @@ function App() {
           ),
         },
         {
-          path: "checkout",
+          path: "/checkout",
           element: (
             <ProtectedRoute>
               <Checkout />
@@ -82,7 +82,7 @@ function App() {
           ),
         },
         {
-          path: "allorders",
+          path: "/allorders",
           element: (
             <ProtectedRoute>
               <MyOrders />
@@ -90,7 +90,7 @@ function App() {
           ),
         },
         {
-          path: "categories",
+          path: "/categories",
           element: (
             <ProtectedRoute>
               <Categories />
@@ -98,7 +98,7 @@ function App() {
           ),
         },
         {
-          path: "products",
+          path: "/products",
           element: (
             <ProtectedRoute>
               <Products />
@@ -106,7 +106,7 @@ function App() {
           ),
         },
         {
-          path: "product-details/:id",
+          path: "/product-details/:id",
           element: (
             <ProtectedRoute>
               <ProductDetails />
@@ -114,7 +114,7 @@ function App() {
           ),
         },
         {
-          path: "brands/:id",
+          path: "/brands/:id",
           element: (
             <ProtectedRoute>
               <SpecificBrand />
@@ -122,7 +122,7 @@ function App() {
           ),
         },
         {
-          path: "wishlist",
+          path: "/wishlist",
           element: (
             <ProtectedRoute>
               <Wishlist />
@@ -130,7 +130,7 @@ function App() {
           ),
         },
         {
-          path: "login",
+          path: "/login",
           element: (
             <LoginProtectedRoute>
               <Login />
@@ -138,7 +138,7 @@ function App() {
           ),
         },
         {
-          path: "register",
+          path: "/register",
           element: (
             <LoginProtectedRoute>
               <Register />
@@ -146,7 +146,7 @@ function App() {
           ),
         },
         {
-          path: "forgot-password",
+          path: "/forgot-password",
           element: (
             <LoginProtectedRoute>
               <ForgotPassword />
@@ -154,7 +154,7 @@ function App() {
           ),
         },
         {
-          path: "verify-password",
+          path: "/verify-password",
           element: (
             <LoginProtectedRoute>
               <VerifyPassword />
@@ -162,7 +162,7 @@ function App() {
           ),
         },
         {
-          path: "reset-password",
+          path: "/reset-password",
           element: (
             <LoginProtectedRoute>
               <ResetPassword />
