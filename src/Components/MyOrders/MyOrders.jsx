@@ -67,13 +67,14 @@ export default function MyOrders() {
                   Order Number: <span className="text-main">{i + 1}</span>
                 </h2>
                 <h3 className="mb-2 h5 fw-bold">
+                  Payment Method : {order.paymentMethodType}
+                </h3>
+                {/* <h3 className="mb-2 h5 fw-bold">Email : {order.user.email}</h3> */}
+                <h3 className="mb-2 h5 fw-bold">
                   Your City is: <span>{order.shippingAddress.city}</span>
                 </h3>
                 <h3 className="mb-2 h5 fw-bold">
                   Your Phone is: {order.shippingAddress.phone}
-                </h3>
-                <h3 className="mb-2 h5 fw-bold">
-                  Your Address is: {order.shippingAddress.details}
                 </h3>
               </div>
               <div className="row">

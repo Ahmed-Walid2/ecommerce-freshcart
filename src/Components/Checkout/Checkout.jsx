@@ -20,9 +20,16 @@ export default function Checkout() {
     phone: "",
     city: "",
   };
+
+  const validationSchema = Yup.object({
+    phone: Yup.string()
+      .required("Phone is required")
+      .matches(/^(002)?01[0125][0-9]{8}$/, "Invalid Phone"),
+  });
+
   const formik = useFormik({
     initialValues,
-    // validationSchema,
+    validationSchema,
     onSubmit: (values) => handlePayment(values),
   });
 
@@ -103,9 +110,9 @@ export default function Checkout() {
               value={formik.values.phone}
               onBlur={formik.handleBlur}
             />
-            {/* {formik.errors.password && formik.touched.password && (
-              <span className="text-danger">{formik.errors.password}</span>
-            )} */}
+            {formik.errors.phone && formik.touched.phone && (
+              <span className="text-danger">{formik.errors.phone}</span>
+            )}
           </div>
           <div className="form-group mb-3">
             <label className="form-label" htmlFor="details">
