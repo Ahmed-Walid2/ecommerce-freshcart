@@ -40,8 +40,12 @@ export default function Wishlist() {
   }
 
   async function addProductToCart(productId) {
+    setIsLoading(true);
+
     let res = await addToCart(productId);
     if (res.status === "success") {
+      setIsLoading(false);
+
       toast.success(res.message, {
         position: "bottom-right",
         autoClose: 2000,
